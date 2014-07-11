@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CMS">
+        <meta name="author" content="LegerAurelien, MonnerayeJerome, CavannaChristophe">
+
+        <title>{% block title %}{% endblock %}TTLS - CMS</title>
+
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/sb-admin.css') }}">
+        <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}" />
+        <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+    </head>
+<body>
+
+    {% block body %}{% endblock %}
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Page Specific Plugins -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+    <script src="{{ asset('js/morris/chart-data-morris.js') }}"></script>
+    <script src="{{ asset('js/tablesorter/jquery.tablesorter.js') }}"></script>
+    <script src="{{ asset('js/tablesorter/tables.js') }}"></script>
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

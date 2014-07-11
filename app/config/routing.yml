@@ -1,0 +1,5 @@
+ttls_panel:
+    resource: "@TtlsPanelBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

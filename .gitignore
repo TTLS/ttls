@@ -1,0 +1,20 @@
+# Project specific
+/web/vendor/
+/web/themes/
+
+# Symfony
+/web/bundles/
+/app/bootstrap.php.cache
+/app/config/parameters.yml
+/var/cache/*
+/var/logs/*
+/var/sessions/*
+/var/assets/
+/var/install.lock
+/build/
+/vendor/
+/bin/
+/composer.phar
+
+# IDE & Environment
+.idea
